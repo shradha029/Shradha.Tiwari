@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shradha Tiwari | Software Developer</title>
+  <meta name="description" content="Portfolio of Shradha Tiwari - Software Developer, full-stack and ML projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">&lt;shradha<span>/</span>&gt;</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#leetcode">LeetCode</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm" href="resume.docx" download>Resume ↓</a>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-text reveal">
+      <p class="mono tag"><span class="dot"></span> open to internships &amp; entry-level roles</p>
+      <h1>Hi, I'm <span class="grad">Shradha Tiwari</span></h1>
+      <h2 class="mono"><span id="typed"></span><span class="cursor">|</span></h2>
+      <p class="lead">
+        Software Developer and CS undergraduate building full-stack apps, REST APIs
+        and ML-powered tools: from JWT-secured backends to multilingual AI assistants.
+      </p>
+      <div class="cta">
+        <a class="btn" href="resume.docx" download>Download Resume</a>
+        <a class="btn btn-ghost" href="#projects">View Projects</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/shradha029" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/shradha-tiwari-bb79312a2" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://leetcode.com/u/shrads29/" target="_blank" rel="noopener">LeetCode</a>
+      </div>
+    </div>
+
+    <div class="code-window reveal" id="tilt">
+      <div class="win-bar"><i></i><i></i><i></i><span class="mono">shradha.js</span></div>
+<pre class="mono"><span class="c">// who am I?</span>
+<span class="k">const</span> <span class="v">shradha</span> = {
+  <span class="p">role</span>: <span class="s">"Software Developer"</span>,
+  <span class="p">degree</span>: <span class="s">"B.Tech CSE (2027)"</span>,
+  <span class="p">stack</span>: [<span class="s">"React"</span>, <span class="s">"Django"</span>,
+          <span class="s">"Flask"</span>, <span class="s">"PostgreSQL"</span>],
+  <span class="p">ml</span>: [<span class="s">"Scikit-learn"</span>, <span class="s">"NLP"</span>],
+  <span class="p">solves</span>: <span class="s">"DSA on LeetCode"</span>,
+  <span class="p">available</span>: <span class="n">true</span>
+};</pre>
+    </div>
+  </section>
+
+  <section class="stats reveal">
+    <div><b data-count="4">0</b><span>Deployed projects</span></div>
+    <div><b data-count="22">0</b><span>Languages in SheVerse</span></div>
+    <div><b data-count="26">0</b><span>Live data sources</span></div>
+    <div><b data-count="97" data-suffix="%">0</b><span>Spam classifier F1</span></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h3 class="title reveal"><span class="mono">01.</span> Tech Stack</h3>
+    <div class="skills reveal">
+      <div class="skill-card"><h4>Frontend</h4><p class="chips"><em>HTML5</em><em>CSS3</em><em>JavaScript</em><em>React.js</em><em>React (Vite)</em><em>Responsive Design</em></p></div>
+      <div class="skill-card"><h4>Backend &amp; APIs</h4><p class="chips"><em>Flask</em><em>FastAPI</em><em>Django</em><em>DRF</em><em>REST APIs</em><em>JWT Auth</em></p></div>
+      <div class="skill-card"><h4>Languages</h4><p class="chips"><em>Python</em><em>JavaScript</em><em>C++</em><em>C</em><em>SQL</em></p></div>
+      <div class="skill-card"><h4>Databases &amp; Tools</h4><p class="chips"><em>MySQL</em><em>PostgreSQL</em><em>Git</em><em>GitHub</em><em>VS Code</em><em>Vercel</em><em>Render</em></p></div>
+      <div class="skill-card"><h4>Machine Learning</h4><p class="chips"><em>Scikit-learn</em><em>NumPy</em><em>Pandas</em><em>NLP</em><em>Naive Bayes</em><em>Logistic Regression</em></p></div>
+      <div class="skill-card"><h4>Education</h4><p class="edu"><b>B.Tech CSE</b>, Delhi Skill &amp; Entrepreneurship University<br /><span class="mono">2023 – 2027 · CGPA 7.75/10</span><br />DSA · OOP · DBMS · OS</p></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h3 class="title reveal"><span class="mono">02.</span> Projects</h3>
+    <div class="filters reveal" id="filters">
+      <button class="active" data-f="all">All</button>
+      <button data-f="fullstack">Full-Stack</button>
+      <button data-f="ml">Machine Learning</button>
+      <button data-f="frontend">Frontend</button>
+    </div>
+
+    <div class="grid">
+      <article class="card reveal" data-cat="fullstack">
+        <div class="card-top"><span class="mono num">01</span><span class="badge">AI · Full-Stack</span></div>
+        <h4>SheVerse: Multilingual Legal Assistant</h4>
+        <p>Retrieval-augmented legal assistant with voice input, text-to-speech and support for 22 languages. A live pipeline fetches and ranks content from 26 government sources, with a curated fallback library and inline citations.</p>
+        <p class="chips"><em>React 19</em><em>TanStack Start</em><em>Tailwind</em><em>Supabase</em><em>Gemini API</em></p>
+        <div class="links"><a href="https://she-verse-legal-assistant.vercel.app/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/shradha029/SheVerse-legal-Assistant" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="card reveal" data-cat="fullstack">
+        <div class="card-top"><span class="mono num">02</span><span class="badge">Full-Stack</span></div>
+        <h4>Taskify Notes: Notes &amp; Task Manager</h4>
+        <p>JWT-secured REST API with rotating refresh tokens and server-side ownership checks. Create, filter and track notes as pending or reviewed by status, category and tags. API on Render, client on Vercel.</p>
+        <p class="chips"><em>React (Vite)</em><em>Django</em><em>DRF</em><em>PostgreSQL</em><em>JWT</em></p>
+        <div class="links"><a href="https://taskify-notes-m8ag.vercel.app/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/shradha029/Taskify-Notes" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="card reveal" data-cat="ml">
+        <div class="card-top"><span class="mono num">03</span><span class="badge">Machine Learning</span></div>
+        <h4>Spam Email Classifier</h4>
+        <p>End-to-end ML web app: paste email text, get an instant prediction. Compared Naive Bayes and Logistic Regression and shipped Logistic Regression at 97% F1 (98.3% recall, 95.8% precision).</p>
+        <p class="chips"><em>Python</em><em>Flask</em><em>Scikit-learn</em><em>Pandas</em><em>NLP</em></p>
+        <div class="links"><a href="https://spam-filter-five.vercel.app/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/shradha029/sentry" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <article class="card reveal" data-cat="frontend">
+        <div class="card-top"><span class="mono num">04</span><span class="badge">Frontend · API</span></div>
+        <h4>Crypto Price Tracker</h4>
+        <p>Responsive, dark tech-themed dashboard with live Bitcoin, Ethereum, Dogecoin and Solana prices via the CoinGecko API, using async fetch for no-reload updates and an animated UI.</p>
+        <p class="chips"><em>HTML5</em><em>CSS3</em><em>JavaScript</em><em>CoinGecko API</em></p>
+        <div class="links"><a href="https://hey-crypto.vercel.app/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/shradha029/Hey-Crypto-" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <h3 class="title reveal"><span class="mono">03.</span> Certifications</h3>
+    <div class="certs">
+      <div class="cert reveal"><div class="ico">☁</div><div><h4>AWS Fundamentals of AI &amp; Machine Learning</h4><p>Amazon Web Services</p></div></div>
+      <div class="cert reveal"><div class="ico">🐍</div><div><h4>Python Essentials 1</h4><p>Cisco Networking Academy</p></div></div>
+      <div class="cert reveal"><div class="ico">◆</div><div><h4>McKinsey Forward Program</h4><p>McKinsey &amp; Company</p></div></div>
+    </div>
+  </section>
+
+  <!-- LEETCODE -->
+  <section id="leetcode" class="section">
+    <h3 class="title reveal"><span class="mono">04.</span> LeetCode</h3>
+    <div class="lc reveal">
+      <div class="lc-info">
+        <h4>Practicing DSA consistently</h4>
+        <p>Problem solving is how I sharpen data structures, algorithms and thinking under constraints.</p>
+        <div class="lc-stats" id="lcStats"></div>
+        <a class="btn" href="https://leetcode.com/u/shrads29/" target="_blank" rel="noopener">Open my LeetCode profile ↗</a>
+      </div>
+      <img id="lcCard" alt="LeetCode stats card for shrads29" loading="lazy"
+           src="https://leetcard.jacoblin.cool/shrads29?theme=light&font=JetBrains%20Mono&ext=heatmap" />
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h3 class="title reveal"><span class="mono">05.</span> Contact</h3>
+    <div class="contact reveal">
+      <div class="contact-info">
+        <h4>Let's build something.</h4>
+        <p>Looking for internships and entry-level software roles. Send a message and I'll get back to you.</p>
+        <ul>
+          <li><span>Email</span><a href="mailto:shradhatiwari2901@gmail.com">shradhatiwari2901@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:+919315667737">+91 93156 67737</a></li>
+          <li><span>Location</span>New Delhi, India</li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/shradha-tiwari-bb79312a2" target="_blank" rel="noopener">shradha-tiwari</a></li>
+          <li><span>GitHub</span><a href="https://github.com/shradha029" target="_blank" rel="noopener">shradha029</a></li>
+        </ul>
+      </div>
+      <form id="form" class="form">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Your email" required />
+        <textarea name="msg" rows="5" placeholder="Your message" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mono">© <span id="year"></span> Shradha Tiwari · Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
