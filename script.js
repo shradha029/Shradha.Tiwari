@@ -52,18 +52,6 @@ document.getElementById("filters").addEventListener("click", e => {
   document.querySelectorAll(".card").forEach(c => c.classList.toggle("hide", btn.dataset.f !== "all" && c.dataset.cat !== btn.dataset.f));
 });
 
-// LeetCode: live stats (graceful fallback if the API is down)
-document.getElementById("lcCard").addEventListener("error", e => e.target.classList.add("err"));
-fetch("https://leetcode-stats-api.herokuapp.com/shrads29")
-  .then(r => r.json())
-  .then(d => {
-    if (d.status !== "success") return;
-    document.getElementById("lcStats").innerHTML =
-      `<div><b>${d.totalSolved}</b><span>Solved</span></div>
-       <div><b>${d.easySolved}</b><span>Easy</span></div>
-       <div><b>${d.mediumSolved}</b><span>Medium</span></div>
-       <div><b>${d.hardSolved}</b><span>Hard</span></div>`;
-  }).catch(() => {});
 
 // Contact form -> opens the visitor's email app (no backend needed)
 document.getElementById("form").addEventListener("submit", e => {
